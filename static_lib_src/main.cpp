@@ -1,7 +1,7 @@
 #include <iostream>
 
-char* encrypt(const char* rawText, int key);
-char* decrypt(const char* encryptedText, int key);
+extern "C" char* encrypt(const char* rawText, int key);
+extern "C" char* decrypt(const char* encryptedText, int key);
 
 int main() {
     char* encryptedText = encrypt("Hello, world!", 3);
