@@ -3,6 +3,7 @@
 
 extern "C" {
     char *encrypt(const char *rawText, int key) {
+        key = key % 26;
         char *encryptedText = new char[strlen(rawText) + 1];
         for (int i = 0; i < strlen(rawText); i++) {
             if (isalpha(rawText[i])) {
@@ -16,6 +17,7 @@ extern "C" {
     }
 
     char *decrypt(const char *encryptedText, int key) {
+        key = key % 26;
         char *rawText = new char[strlen(encryptedText) + 1];
         for (int i = 0; i < strlen(encryptedText); i++) {
             if (isalpha(encryptedText[i])) {

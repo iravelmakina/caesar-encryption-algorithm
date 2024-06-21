@@ -22,8 +22,8 @@ int main() {
         return -1;
     }
 
-    std::cout << encryption("Hello, World!", 3) << std::endl;
-    std::cout << decryption("Khoor, Zruog!", 3) << std::endl;
+    std::cout << encryption("Hello, World!", 200) << std::endl;
+    std::cout << decryption("Zwddg, Ogjdv!", 200) << std::endl;
 
     delete[] encryption("Hello, World!", 3);
     delete[] decryption("Khoor, Zruog!", 3);
