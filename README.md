@@ -28,7 +28,6 @@ This lab is divided into four main subtasks:
 2. Compile the source code using a C++ compiler.
 3. Run the executable.
 4. Follow the on-screen instructions to use the Caesar cipher.
-        ```
 
 ## Contributors
 -@iravelmakina
